@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app__container">
+        <div class="input__header">
+            <header>
+                <img id="logotipo" class="logotipo" src="./assets/logo alura.png" alt="Logo da Alura">
+            </header>
+        
+            <section class="conteudo">
+                <label hidden for="input-texto">Digite seu texto aqui</label>
+                <textarea id="input-texto" name="input-texto" rows="3" cols="3" placeholder="Digite seu texto"></textarea>
+
+                <div class="conteudo__info">
+
+                    <div class="conteudo__info__aviso">
+                        <img src="./assets/aviso.png" alt="">
+                        <span>Apenas letras minúsculas e sem acento.</span>
+                    </div>
+
+                    <div class="conteudo__botoes">
+                        <button  class="cont botoes__crip" onclick="criptografarTexto()">Criptografar</button>
+                        <button  class="cont botoes__descrip" onclick="descriptografartexto()">Descriptografar</button> 
+                    </div>
+            
+                </div>
+            </section>        
+        </div>   
+
+        <section id="resultado" class="resultado">
+            <div class="msg-not-found fade-in">
+                    <img id="imgNoMsgFound" src="./assets/img.png" alt="menino com uma lupa"> 
+                    <h3>Nenhuma mensagem encontrada</h3>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </section>
+
+    </div>
+    
+    <footer>
+        <ul>
+            <li>© Desenvolvido por Luana Lima</li>
+            <li>|</li>
+            <li>
+                <a href="https://github.com/dashboard" target="_blank"><img src="./assets/github-black.png" alt="Logo do GitHub"> GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/luana-rodrigues-794a97266/" target="_blank"><img src="/assets/linkedin-black.png" alt="Logo do LinkedIn"> LinkedIn</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
